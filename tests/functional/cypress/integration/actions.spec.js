@@ -1,7 +1,12 @@
 
 context('Actions', () => {
+  before(() => {
+    cy.seed('LiveBlogEditorSeeder')
+    // cy.seed('LiveBlogPost')
 
-  it('.type() - type into a DOM element', () => {
+  })
+
+  it('stuff', () => {
     cy.visitAdmin()
   })
 

@@ -7,7 +7,7 @@ class ExampleSeeder extends Seeder {
 	public function run() {
 		( new Fixtures\Post([
 			'import_id'  => 10,
-			'post_title' => 'Post with Custom Comments',
+			'post_title' => 'dj Post with Custom Comments',
 		]) )->create();
 
 		( new ExampleCommentFixture( [ 'comment_post_ID' => 10 ] ) )->create( 10 );
